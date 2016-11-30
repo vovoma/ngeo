@@ -7,6 +7,8 @@ goog.require('ol.View');
 goog.require('ol.layer.Tile');
 goog.require('ol.source.OSM');
 
+goog.require('ngeo.workshop');
+
 
 /** @type {!angular.Module} **/
 app.module = angular.module('app', ['ngeo']);
@@ -33,6 +35,17 @@ app.MainController = function() {
       zoom: 4
     })
   });
+
+  // Whether the componant is active
+  this.active = true;
+
+  // The coordinates to rencenter to
+  this.coordinates = [
+    [730556, 5863720],
+    [829500, 5933600],
+    [950000, 6002000]
+  ];
+
 };
 
 

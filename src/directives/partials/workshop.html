@@ -1,0 +1,5 @@
+<div>
+  <div ng-repeat="coordinate in ctrl.coordinates">
+    <a href="" ng-click="ctrl.recenter(coordinate)">{{coordinate | ngeoNumberCoordinates:0:'{x} / {y}'}}</a>
+  </div>
+</div>

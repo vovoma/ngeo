@@ -7,6 +7,8 @@
           content="initial-scale=1.0, user-scalable=no, width=device-width">
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="../node_modules/openlayers/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" type="text/css">
+
     <style>
       #map {
         width: 600px;
@@ -17,6 +19,13 @@
   <body ng-controller="MainController as ctrl">
     <div id="map" ngeo-map="ctrl.map"></div>
     <p id="desc">This example shows how to use the <code><a href="../apidoc/ngeo.mapDirective.html" title="Read our documentation">ngeo-map</a></code> directive to insert an OpenLayers map in a page.</p>
+
+    <button ng-click="ctrl.active = !ctrl.active">toggle active</button>
+    <ngeo-workshop
+       active="ctrl.active"
+       map="ctrl.map"
+       coordinates="ctrl.coordinates" >
+
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/angular/angular.js"></script>
     <script src="../node_modules/angular-gettext/dist/angular-gettext.js"></script>
