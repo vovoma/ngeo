@@ -1,7 +1,7 @@
 goog.provide('ngeo.Popover');
 
 goog.require('ol.Overlay');
-goog.require('goog.events');
+goog.require('ol.events');
 
 
 /**
@@ -19,7 +19,7 @@ ngeo.Popover = function(opt_options) {
 
   /**
    * The key for close button 'click' event
-   * @type {?goog.events.Key}
+   * @type {?ol.EventsKey}
    * @private
    */
   this.clickKey_ = null;
@@ -69,7 +69,7 @@ ngeo.Popover.prototype.setMap = function(map) {
   const currentMap = this.getMap();
   if (currentMap) {
     if (this.clickKey_) {
-      goog.events.unlistenByKey(this.clickKey_);
+      ol.events.unlistenByKey(this.clickKey_);
       this.clickKey_ = null;
     }
     $(element).popover('destroy');
@@ -97,8 +97,7 @@ ngeo.Popover.prototype.setMap = function(map) {
         .popover('show');
     }, 0);
 
-    this.clickKey_ = goog.events.listen(this.closeEl_[0],
-      'click', this.handleCloseElClick_, false, this);
+    this.clickKey_ = ol.events.listen(this.closeEl_[0], 'click', this.handleCloseElClick_, this);
   }
 };
 

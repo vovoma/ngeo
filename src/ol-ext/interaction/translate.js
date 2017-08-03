@@ -38,7 +38,7 @@ ngeo.interaction.Translate = function(options) {
   this.featureListenerKeys_ = {};
 
   /**
-   * @type {?goog.events.Key}
+   * @type {?ol.EventsKey}
    * @private
    */
   this.keyPressListenerKey_ = null;
@@ -89,18 +89,17 @@ ol.inherits(ngeo.interaction.Translate, ol.interaction.Translate);
 ngeo.interaction.Translate.prototype.setActive = function(active) {
 
   if (this.keyPressListenerKey_) {
-    goog.events.unlistenByKey(this.keyPressListenerKey_);
+    ol.events.unlistenByKey(this.keyPressListenerKey_);
     this.keyPressListenerKey_ = null;
   }
 
   ol.interaction.Translate.prototype.setActive.call(this, active);
 
   if (active) {
-    this.keyPressListenerKey_ = goog.events.listen(
+    this.keyPressListenerKey_ = ol.events.listen(
       document,
       'keyup',
       this.handleKeyUp_,
-      false,
       this
     );
   }
@@ -272,7 +271,7 @@ ngeo.interaction.Translate.prototype.getGeometryCenterPoint_ = function(
 
 /**
  * Deactivate this interaction if the ESC key is pressed.
- * @param {goog.events.Event} evt Event.
+ * @param {Event} evt Event.
  * @private
  */
 ngeo.interaction.Translate.prototype.handleKeyUp_ = function(evt) {

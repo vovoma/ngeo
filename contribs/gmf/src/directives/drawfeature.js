@@ -86,6 +86,12 @@ gmf.DrawfeatureController = function($scope, $timeout, gettextCatalog, ngeoDecor
    */
   this.active;
 
+  /**
+   * @type {!Array.<ol.EventsKey>}
+   * @private
+   */
+  this.listenerKeys_ = [];
+
   if (this.active === undefined) {
     this.active = false;
   }
@@ -507,43 +513,22 @@ gmf.DrawfeatureController.prototype.handleFeaturesRemove_ = function(evt) {
  * @param {boolean} active Whether the map select is active or not.
  * @private
  */
-gmf.DrawfeatureController.prototype.handleMapSelectActiveChange_ = function(
-  active) {
-
-  const mapDiv = this.map.getViewport();
-  goog.asserts.assertElement(mapDiv);
+gmf.DrawfeatureController.prototype.handleMapSelectActiveChange_ = function(active) {
 
   if (active) {
-    ol.events.listen(this.map, 'click',
-      this.handleMapClick_, this);
-
-    goog.events.listen(mapDiv, 'contextmenu',
-      this.handleMapContextMenu_, false, this);
-
-    goog.events.listen(mapDiv, 'touchstart',
-      this.handleMapTouchStart_, false, this);
-
-    goog.events.listen(mapDiv, 'touchmove',
-      this.handleMapTouchEnd_, false, this);
-
-    goog.events.listen(mapDiv, 'touchend',
-      this.handleMapTouchEnd_, false, this);
-
+    const mapDiv = this.map.getViewport();
+    goog.asserts.assertElement(mapDiv);
+    goog.asserts.assert(this.listenerKeys_.length === 0);
+    this.listenerKeys_.push(
+      ol.events.listen(this.map, 'click', this.handleMapClick_, this),
+      ol.events.listen(mapDiv, 'contextmenu', this.handleMapContextMenu_, this),
+      ol.events.listen(mapDiv, 'touchstart', this.handleMapTouchStart_, this),
+      ol.events.listen(mapDiv, 'touchmove', this.handleMapTouchEnd_, this),
+      ol.events.listen(mapDiv, 'touchend', this.handleMapTouchEnd_, this)
+    );
   } else {
-    ol.events.unlisten(this.map, 'click',
-      this.handleMapClick_, this);
-
-    goog.events.unlisten(mapDiv, 'contextmenu',
-      this.handleMapContextMenu_, false, this);
-
-    goog.events.unlisten(mapDiv, 'touchstart',
-      this.handleMapTouchStart_, false, this);
-
-    goog.events.unlisten(mapDiv, 'touchmove',
-      this.handleMapTouchEnd_, false, this);
-
-    goog.events.unlisten(mapDiv, 'touchend',
-      this.handleMapTouchEnd_, false, this);
+    this.listenerKeys_.forEach(ol.events.unlistenByKey);
+    this.listenerKeys_.length = 0;
   }
 };
 
