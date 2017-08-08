@@ -1,7 +1,8 @@
 /**
  * @module ngeo location search namespace
  */
-goog.provide('ngeo.search.createLocationSearchBloodhound');
+goog.module('ngeo.search.createLocationSearchBloodhound');
+goog.module.declareLegacyNamespace();
 
 goog.require('ol.obj');
 goog.require('ol.proj');
@@ -10,33 +11,12 @@ goog.require('ngeo.proj.EPSG21781');
 goog.require('ol.geom.Point');
 goog.require('ol.Feature');
 
-/**
- * Provides a function that creates a Bloodhound engine
- * for the GeoAdmin Location Search API, which creates `ol.Feature` objects
- * as suggestions.
- *
- * See: http://api3.geo.admin.ch/services/sdiservices.html#search
- *
- * Example:
- *
- *     let bloodhound = ngeoCreateLocationSearchBloodhound({
- *       targetProjection: ol.proj.get('EPSG:3857'),
- *       limit: 10
- *     });
- *     bloodhound.initialize();
- *
- * @typedef {function(ngeox.search.LocationSearchOptions=):Bloodhound}
- * @ngdoc service
- * @ngname search.createLocationSearchBloodhound
- */
-ngeo.search.CreateLocationSearchBloodhound;
-
 
 /**
  * @param {ngeox.search.LocationSearchOptions=} opt_options Options.
  * @return {Bloodhound} The Bloodhound object.
  */
-ngeo.search.createLocationSearchBloodhound = function(opt_options) {
+exports = function(opt_options) {
   const options = opt_options || {};
 
   const sourceProjection = ol.proj.get('EPSG:21781');
@@ -147,8 +127,27 @@ ngeo.search.createLocationSearchBloodhound = function(opt_options) {
 /**
  * @type {!angular.Module}
  */
-ngeo.search.createLocationSearchBloodhound.module = angular.module('ngeoCreateLocationSearchBloodhound', []);
+exports.module = angular.module('ngeoCreateLocationSearchBloodhound', []);
 
-ngeo.search.createLocationSearchBloodhound.module.value(
-  'ngeoCreateLocationSearchBloodhound',
-  ngeo.search.createLocationSearchBloodhound);
+exports.module.value('ngeoCreateLocationSearchBloodhound', exports);
+
+/**
+ * Provides a function that creates a Bloodhound engine
+ * for the GeoAdmin Location Search API, which creates `ol.Feature` objects
+ * as suggestions.
+ *
+ * See: http://api3.geo.admin.ch/services/sdiservices.html#search
+ *
+ * Example:
+ *
+ *     let bloodhound = ngeoCreateLocationSearchBloodhound({
+ *       targetProjection: ol.proj.get('EPSG:3857'),
+ *       limit: 10
+ *     });
+ *     bloodhound.initialize();
+ *
+ * @typedef {function(ngeox.search.LocationSearchOptions=):Bloodhound}
+ * @ngdoc service
+ * @ngname search.createLocationSearchBloodhound
+ */
+exports.Type;
