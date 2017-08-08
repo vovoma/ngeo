@@ -4,6 +4,7 @@
 goog.module('ngeo.search.createLocationSearchBloodhound');
 goog.module.declareLegacyNamespace();
 
+goog.require('ol');
 goog.require('ol.obj');
 goog.require('ol.proj');
 /** @suppress {extraRequire} */
