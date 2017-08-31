@@ -20,9 +20,14 @@
             <a href class="btn btn-default btn-block btn-primary"
               data-toggle="dropdown">
               <span class="fa fa-grid"></span>
-              <span translate>Theme:</span>
-              <b ng-if="!mainCtrl.gmfThemeManager.getThemeName()" translate>Loading...</b>
-              <b ng-if="mainCtrl.gmfThemeManager.getThemeName()">{{mainCtrl.gmfThemeManager.getThemeName()|translate}}</b>
+              <span ng-if="mainCtrl.gmfThemeManager.modeFlush">
+                <span translate>Theme:</span>
+                <b ng-if="!mainCtrl.gmfThemeManager.getThemeName()" translate>Loading...</b>
+                <b ng-if="mainCtrl.gmfThemeManager.getThemeName()">{{mainCtrl.gmfThemeManager.getThemeName()|translate}}</b>
+              </span>
+              <span ng-if="!mainCtrl.gmfThemeManager.modeFlush">
+                <b ng-if="!mainCtrl.gmfThemeManager.themeName" translate>Themes</b>
+              </span>
               <span class="caret"></span>
             </a>
             <gmf-themeselector class="dropdown-menu"
@@ -168,7 +173,7 @@
     <script src="../../../../lib/watchwatchers.js"></script>
     <script>
       (function() {
-        var cacheVersion = '70614f71ead400fa87004120d6baf9ced52f3415';
+        var cacheVersion = 'bb2d5c175c90b3c1cda9b77b5d7339d69278477b';
         var urlElements = window.location.pathname.split('/');
 
         var angularLocaleScriptUrlElements = urlElements.slice(0, urlElements.length - 3);
