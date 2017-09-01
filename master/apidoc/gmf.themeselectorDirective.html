@@ -54,9 +54,14 @@ theme will update the &quot;tree&quot; object of this <a href="gmf.TreeManager.h
 <p>Example:</p>
 <pre class="prettyprint source"><code> &lt;a href class=&quot;btn btn-default btn-block btn-primary&quot; data-toggle=&quot;dropdown&quot;>
      &lt;span class=&quot;fa fa-grid&quot;>&lt;/span>
-     &lt;span translate>Theme:&lt;/span>
-     &lt;b ng-if=&quot;!mainCtrl.gmfThemeManager.getThemeName()&quot; translate>Loading...&lt;/b>
-     &lt;b ng-if=&quot;mainCtrl.gmfThemeManager.getThemeName()&quot;>{{mainCtrl.gmfThemeManager.getThemeName()|translate}}&lt;/b>
+     &lt;span ng-if=&quot;mainCtrl.gmfThemeManager.modeFlush&quot;>
+       &lt;span translate>Theme:&lt;/span>
+       &lt;b ng-if=&quot;!mainCtrl.gmfThemeManager.getThemeName()&quot; translate>Loading...&lt;/b>
+       &lt;b ng-if=&quot;mainCtrl.gmfThemeManager.getThemeName()&quot;>{{mainCtrl.gmfThemeManager.getThemeName()|translate}}&lt;/b>
+     &lt;/span>
+     &lt;span ng-if=&quot;!mainCtrl.gmfThemeManager.modeFlush&quot;>
+       &lt;b ng-if=&quot;!mainCtrl.gmfThemeManager.themeName&quot; translate>Themes&lt;/b>
+     &lt;/span>
      &lt;span class=&quot;caret&quot;>&lt;/span>
  &lt;/a>
  &lt;gmf-themeselector
@@ -178,7 +183,7 @@ about these modes, refer to the documentation of <a href="gmf.TreeManager.html">
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/master/contribs/gmf/src/directives/themeselector.js#L62">contribs/gmf/src/directives/themeselector.js:62</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/master/contribs/gmf/src/directives/themeselector.js#L67">contribs/gmf/src/directives/themeselector.js:67</a>
     </div>
     
 
