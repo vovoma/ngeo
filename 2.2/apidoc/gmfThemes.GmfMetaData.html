@@ -91,7 +91,7 @@
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L404">contribs/gmf/externs/gmf-themes.js:404</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L400">contribs/gmf/externs/gmf-themes.js:400</a>
     </div>
     
 
@@ -135,14 +135,14 @@
 
         
             
-<h4 class="name" id="copyable"><span class="type-signature"></span>copyable<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+<h4 class="name" id="copy_to"><span class="type-signature"></span>copy_to<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>:<a href="-_.html"></a>.&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>:<a href="-_.html"></a>>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
 
 
 
 
 <div class="description">
-    <p>Whether the data of of this layer node can be queried in order to be copied
-in an other layer.</p>
+    <p>Names of layers on which the geometry can be copied to (in the edition mode).
+For WMS layers and only for CGXP ! (Use &quot;copyable&quot; in NGEO.)</p>
 </div>
 
 
@@ -178,7 +178,70 @@ in an other layer.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L412">contribs/gmf/externs/gmf-themes.js:412</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L408">contribs/gmf/externs/gmf-themes.js:408</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="copyable"><span class="type-signature"></span>copyable<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>Whether the geometry from this data source can be copied to other data
+sources or not. Defaults to false.
+Default to false.
+For WMS layers.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L418">contribs/gmf/externs/gmf-themes.js:418</a>
     </div>
     
 
@@ -203,67 +266,8 @@ in an other layer.</p>
 
 <div class="description">
     <p>List of attribute names which should have rules already ready when using
-the filter tools.</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="tag-source">
-    
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L420">contribs/gmf/externs/gmf-themes.js:420</a>
-    </div>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="disclaimer"><span class="type-signature"></span>disclaimer<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
-
-
-
-
-<div class="description">
-    <p>The disclaimer.</p>
+the filter tools.
+For WMS layers.</p>
 </div>
 
 
@@ -317,13 +321,14 @@ the filter tools.</p>
 
         
             
-<h4 class="name" id="enumeratedAttributes"><span class="type-signature"></span>enumeratedAttributes<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>:<a href="-_.html"></a>.&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>:<a href="-_.html"></a>>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+<h4 class="name" id="disclaimer"><span class="type-signature"></span>disclaimer<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
 
 
 
 
 <div class="description">
-    <p>List of attribute names which have enumerated attribute values.</p>
+    <p>The disclaimer text for this element.
+For WMS and WMTS layers, layer groups and themes.</p>
 </div>
 
 
@@ -359,7 +364,132 @@ the filter tools.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L434">contribs/gmf/externs/gmf-themes.js:434</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L435">contribs/gmf/externs/gmf-themes.js:435</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="enumeratedAttributes"><span class="type-signature"></span>enumeratedAttributes<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>:<a href="-_.html"></a>.&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>:<a href="-_.html"></a>>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>List of attribute names which have enumerated attribute values (for filters
+purpose).
+For WMS layers.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L444">contribs/gmf/externs/gmf-themes.js:444</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="geometry_validation"><span class="type-signature"></span>geometry_validation<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>Whether geometries must be validated by PostgreSQL on edition.
+Default to false.
+For WMS layers.
+Also working in CGXP.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L454">contribs/gmf/externs/gmf-themes.js:454</a>
     </div>
     
 
@@ -383,187 +513,8 @@ the filter tools.</p>
 
 
 <div class="description">
-    <p>The icon URL visible in the layer tree.</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="tag-source">
-    
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L441">contribs/gmf/externs/gmf-themes.js:441</a>
-    </div>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="identifierAttributeField"><span class="type-signature"></span>identifierAttributeField<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
-
-
-
-
-<div class="description">
-    <p>The field used in the display query window as feature title.</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="tag-source">
-    
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L448">contribs/gmf/externs/gmf-themes.js:448</a>
-    </div>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="isChecked"><span class="type-signature"></span>isChecked<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
-
-
-
-
-<div class="description">
-    <p>Is the layer checked by default.</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="tag-source">
-    
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L455">contribs/gmf/externs/gmf-themes.js:455</a>
-    </div>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="isExpanded"><span class="type-signature"></span>isExpanded<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
-
-
-
-
-<div class="description">
-    <p>Group expanded by default.</p>
+    <p>The URL of the icon to display in the layer tree.
+For WMS and WMTS layers.</p>
 </div>
 
 
@@ -617,253 +568,200 @@ the filter tools.</p>
 
         
             
+<h4 class="name" id="identifierAttributeField"><span class="type-signature"></span>identifierAttributeField<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>The field used in the 'display query window' as feature title.
+For WMS layers.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L470">contribs/gmf/externs/gmf-themes.js:470</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="isChecked"><span class="type-signature"></span>isChecked<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>Is the layer checked by default.
+Default to false.
+For WMS and WMTS layers.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L479">contribs/gmf/externs/gmf-themes.js:479</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="isExpanded"><span class="type-signature"></span>isExpanded<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>Whether the layer group is expanded by default.
+Default to false.
+For layer groups (only).</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L488">contribs/gmf/externs/gmf-themes.js:488</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
 <h4 class="name" id="isLegendExpanded"><span class="type-signature"></span>isLegendExpanded<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
 
 
 
 
 <div class="description">
-    <p>Legend expanded by default.</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="tag-source">
-    
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L469">contribs/gmf/externs/gmf-themes.js:469</a>
-    </div>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="legend"><span class="type-signature"></span>legend<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
-
-
-
-
-<div class="description">
-    <p>Display the legend (default true).</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="tag-source">
-    
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L476">contribs/gmf/externs/gmf-themes.js:476</a>
-    </div>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="legendImage"><span class="type-signature"></span>legendImage<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
-
-
-
-
-<div class="description">
-    <p>The URL to the image used as a legend in the layer tree.</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="tag-source">
-    
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L483">contribs/gmf/externs/gmf-themes.js:483</a>
-    </div>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="legendRule"><span class="type-signature"></span>legendRule<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
-
-
-
-
-<div class="description">
-    <p>The WMS rule used to get the icon visible in the layer tree.</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="tag-source">
-    
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L490">contribs/gmf/externs/gmf-themes.js:490</a>
-    </div>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="maxResolution"><span class="type-signature"></span>maxResolution<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
-
-
-
-
-<div class="description">
-    <p>The max resolution where the layer is visible.</p>
+    <p>Whether the legend is expanded by default.
+Default to false.
+For WMS and WMTS layers.</p>
 </div>
 
 
@@ -917,13 +815,15 @@ the filter tools.</p>
 
         
             
-<h4 class="name" id="metadataUrl"><span class="type-signature"></span>metadataUrl<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+<h4 class="name" id="lastUpdateDateColumn"><span class="type-signature"></span>lastUpdateDateColumn<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
 
 
 
 
 <div class="description">
-    <p>The Metadata URL.</p>
+    <p>'Date' column that will be automatically updated after editing an element.
+For WMS layers.
+Also working in CGXP.</p>
 </div>
 
 
@@ -959,7 +859,7 @@ the filter tools.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L504">contribs/gmf/externs/gmf-themes.js:504</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L506">contribs/gmf/externs/gmf-themes.js:506</a>
     </div>
     
 
@@ -977,13 +877,15 @@ the filter tools.</p>
 
         
             
-<h4 class="name" id="minResolution"><span class="type-signature"></span>minResolution<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+<h4 class="name" id="lastUpdateUserColumn"><span class="type-signature"></span>lastUpdateUserColumn<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
 
 
 
 
 <div class="description">
-    <p>The min resolution where the layer is visible.</p>
+    <p>'User' column that will be automatically updated after editing an element.
+For WMS layers.
+Also working in CGXP.</p>
 </div>
 
 
@@ -1019,7 +921,7 @@ the filter tools.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L511">contribs/gmf/externs/gmf-themes.js:511</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L515">contribs/gmf/externs/gmf-themes.js:515</a>
     </div>
     
 
@@ -1037,73 +939,15 @@ the filter tools.</p>
 
         
             
-<h4 class="name" id="ogcServer"><span class="type-signature"></span>ogcServer<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+<h4 class="name" id="legend"><span class="type-signature"></span>legend<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
 
 
 
 
 <div class="description">
-    <p>The corresponding OGC server for GeoMapFish layer WMTS.</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <div class="tag-source">
-    
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L518">contribs/gmf/externs/gmf-themes.js:518</a>
-    </div>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="opacity"><span class="type-signature"></span>opacity<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
-
-
-
-
-<div class="description">
-    <p>Layer opacity, default is 1.0</p>
+    <p>Display the legend of this layers.
+Default to false.
+For WMS and WMTS layers.</p>
 </div>
 
 
@@ -1157,13 +1001,14 @@ the filter tools.</p>
 
         
             
-<h4 class="name" id="printLayers"><span class="type-signature"></span>printLayers<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+<h4 class="name" id="legendImage"><span class="type-signature"></span>legendImage<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
 
 
 
 
 <div class="description">
-    <p>On GeoMapFish layer WMTS the WMS layers used in the print.</p>
+    <p>The URL to the image used as a legend in the layer tree.
+For WMS and WMTS layers.</p>
 </div>
 
 
@@ -1199,7 +1044,441 @@ the filter tools.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L532">contribs/gmf/externs/gmf-themes.js:532</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L533">contribs/gmf/externs/gmf-themes.js:533</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="legendRule"><span class="type-signature"></span>legendRule<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>The WMS 'RULE' parameter used to display the icon in the layer tree.
+&quot;Short version&quot; of the 'iconURL' metadata for WMS layers.
+For WMS layers.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L542">contribs/gmf/externs/gmf-themes.js:542</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="maxResolution"><span class="type-signature"></span>maxResolution<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>The max resolution where the layer is visible.
+For WMS layers.
+On WMTS layers it will have effect on the node in the layertree but not on
+the layertree directly.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L552">contribs/gmf/externs/gmf-themes.js:552</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="metadataUrl"><span class="type-signature"></span>metadataUrl<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>The URL to the informations on this layer.
+For WMS and WMTS layers.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L560">contribs/gmf/externs/gmf-themes.js:560</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="minResolution"><span class="type-signature"></span>minResolution<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>The min resolution where the layer is visible.
+For WMS layers.
+On WMTS layers it will have effect on the node in the layertree but not on
+the layer directly.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L570">contribs/gmf/externs/gmf-themes.js:570</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="ogcServer"><span class="type-signature"></span>ogcServer<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>The corresponding OGC server for a WMTS layer.
+For WMTS layers.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L578">contribs/gmf/externs/gmf-themes.js:578</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="opacity"><span class="type-signature"></span>opacity<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>Layer opacity.
+Default to 1.0 (fuly visible, 0 means invisible)
+For WMS and WMTS layers.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L587">contribs/gmf/externs/gmf-themes.js:587</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="printLayers"><span class="type-signature"></span>printLayers<span class="type-signature">: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>|<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span> </h4>
+
+
+
+
+<div class="description">
+    <p>A WMS layer that will be used instead of the WMTS layers in the print. Used
+to increase quality of printed WMTS layers.
+For WMTS layers.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L596">contribs/gmf/externs/gmf-themes.js:596</a>
     </div>
     
 
@@ -1223,7 +1502,8 @@ the filter tools.</p>
 
 
 <div class="description">
-    <p>On GeoMapFish layer WMTS the WMS layers used to query.</p>
+    <p>The WMS layers used as references to query the WMTS layers.
+For WMTS layers.</p>
 </div>
 
 
@@ -1259,7 +1539,7 @@ the filter tools.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L539">contribs/gmf/externs/gmf-themes.js:539</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L604">contribs/gmf/externs/gmf-themes.js:604</a>
     </div>
     
 
@@ -1284,7 +1564,9 @@ the filter tools.</p>
 
 <div class="description">
     <p>The snapping configuration for the leaf. If set, the leaf's layer is
-considered to be &quot;snappable&quot;, even if the config itself is empty.</p>
+considered to be &quot;snappable&quot;, even if the config itself is empty.
+Example of value: {'tolerance': 50, 'edge': false}
+For WMS layers.</p>
 </div>
 
 
@@ -1320,7 +1602,7 @@ considered to be &quot;snappable&quot;, even if the config itself is empty.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L562">contribs/gmf/externs/gmf-themes.js:562</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L630">contribs/gmf/externs/gmf-themes.js:630</a>
     </div>
     
 
@@ -1344,7 +1626,8 @@ considered to be &quot;snappable&quot;, even if the config itself is empty.</p>
 
 
 <div class="description">
-    <p>The icon visible in the theme selector.</p>
+    <p>The icon visible in the background selector.
+For WMS and WMTS layers.</p>
 </div>
 
 
@@ -1380,7 +1663,7 @@ considered to be &quot;snappable&quot;, even if the config itself is empty.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L546">contribs/gmf/externs/gmf-themes.js:546</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L612">contribs/gmf/externs/gmf-themes.js:612</a>
     </div>
     
 
@@ -1404,7 +1687,8 @@ considered to be &quot;snappable&quot;, even if the config itself is empty.</p>
 
 
 <div class="description">
-    <p>The name of the time attribute.</p>
+    <p>The name of the time attribute.
+For WMS(-T) layers.</p>
 </div>
 
 
@@ -1440,7 +1724,7 @@ considered to be &quot;snappable&quot;, even if the config itself is empty.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L553">contribs/gmf/externs/gmf-themes.js:553</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L620">contribs/gmf/externs/gmf-themes.js:620</a>
     </div>
     
 
@@ -1464,7 +1748,10 @@ considered to be &quot;snappable&quot;, even if the config itself is empty.</p>
 
 
 <div class="description">
-    <p>On GeoMapFish layer WMTS the corresponding WMS layers.</p>
+    <p>A corresponding WMS layer for a WMTS layers. Used to query the WMTS layers
+and to print it. (See also printLayers and queryLayers metadata for more
+granularity).
+For WMTS Layers.</p>
 </div>
 
 
@@ -1500,7 +1787,7 @@ considered to be &quot;snappable&quot;, even if the config itself is empty.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L569">contribs/gmf/externs/gmf-themes.js:569</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/contribs/gmf/externs/gmf-themes.js#L640">contribs/gmf/externs/gmf-themes.js:640</a>
     </div>
     
 
