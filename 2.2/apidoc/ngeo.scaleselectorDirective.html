@@ -54,11 +54,8 @@ selecting map scales.</p>
 <p>Example:</p>
 <pre class="prettyprint source"><code>&lt;div ngeo-scaleselector=&quot;ctrl.scales&quot; ngeo-scaleselector-map=&quot;ctrl.map&quot;>
 &lt;/div></code></pre><p>The expression passed to the ngeo-scaleselector attribute should return an
-object of this form:</p>
+array of this form:</p>
 <p>   [20000, 10000, 5000, 2500]</p>
-<p>This object's keys are strings representing zoom levels, the values are
-strings representing scales. The directive's partial uses ng-bind-html so
-the scale strings should be trusted.</p>
 <p>That directive's partial uses Bootstrap's <code>dropdown</code> and <code>dropdown-menu</code>
 classes, and <code>data-toggle=&quot;dropdown&quot;</code>, so it is meant to be used with
 Bootstrap's &quot;dropdown&quot; jQuery plugin.</p>
@@ -107,13 +104,13 @@ the scales information is now watched.</p>
 
         <tr>
             
-                <td class="name"><code>ngeo-scaleselector-scales</code></td>
+                <td class="name"><code>ngeo-scaleselector</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>:<a href="-_.html"></a>.&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>:<a href="-_.html"></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>:<a href="-_.html"></a>></span>
+<span class="param-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>:<a href="-_.html"></a>.&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>:<a href="-_.html"></a>></span>
 
 
 
@@ -124,7 +121,7 @@ the scales information is now watched.</p>
 
             
 
-            <td class="description last">The available scales (key: scale, value: display text).</td>
+            <td class="description last">The available scales.</td>
         </tr>
 
     
@@ -189,7 +186,7 @@ the scales information is now watched.</p>
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/2.2/src/directives/scaleselector.js#L73">src/directives/scaleselector.js:73</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/2.2/src/directives/scaleselector.js#L69">src/directives/scaleselector.js:69</a>
     </div>
     
 
