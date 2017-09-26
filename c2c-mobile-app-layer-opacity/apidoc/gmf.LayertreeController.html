@@ -923,7 +923,7 @@
     
     <div class="tag-source">
     
-        <a href="https://github.com/camptocamp/ngeo/blob/c2c-mobile-app-layer-opacity/contribs/gmf/src/directives/layertree.js#L707">contribs/gmf/src/directives/layertree.js:707</a>
+        <a href="https://github.com/camptocamp/ngeo/blob/c2c-mobile-app-layer-opacity/contribs/gmf/src/directives/layertree.js#L769">contribs/gmf/src/directives/layertree.js:769</a>
     </div>
     
 
@@ -2574,6 +2574,441 @@ a ngeo layertree destroy event.</p>
 
 
 
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="supportsCustomization"><span class="type-signature"></span>supportsCustomization<span class="signature">(treeCtrl)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Determines whether the layer tree controller supports being customized.
+For example, having its layer opacity changed, displaying its legend, etc.</p>
+<p>If any requirement is met, then the treeCtrl is considered supporting
+&quot;customization&quot;, regardless of what it actually is.</p>
+<p>The requirements are:</p>
+<ul>
+<li>must not be the root controller, any of the following:<ul>
+<li>it supports legend</li>
+<li>it supports having the layer opacity being changed</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>treeCtrl</code></td>
+            
+
+            <td class="type">
+            
+                <a href="!ngeo.LayertreeController.html">!ngeo.LayertreeController</a>
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Ngeo tree controller.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/c2c-mobile-app-layer-opacity/contribs/gmf/src/directives/layertree.js#L718">contribs/gmf/src/directives/layertree.js:718</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+
+    boolean
+
+
+    <p>Whether the layer tree controller supports being
+    &quot;customized&quot; or not.</p>
+
+</div>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="supportsLegend"><span class="type-signature"></span>supportsLegend<span class="signature">(treeCtrl)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>treeCtrl</code></td>
+            
+
+            <td class="type">
+            
+                <a href="!ngeo.LayertreeController.html">!ngeo.LayertreeController</a>
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Ngeo tree controller.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/c2c-mobile-app-layer-opacity/contribs/gmf/src/directives/layertree.js#L733">contribs/gmf/src/directives/layertree.js:733</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+
+    boolean
+
+
+    <p>Whether the layer tree controller supports having a
+    legend being shown.</p>
+
+</div>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="supportsOpacityChange"><span class="type-signature"></span>supportsOpacityChange<span class="signature">(treeCtrl)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>treeCtrl</code></td>
+            
+
+            <td class="type">
+            
+                <a href="!ngeo.LayertreeController.html">!ngeo.LayertreeController</a>
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Ngeo tree controller.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="tag-source">
+    
+        <a href="https://github.com/camptocamp/ngeo/blob/c2c-mobile-app-layer-opacity/contribs/gmf/src/directives/layertree.js#L747">contribs/gmf/src/directives/layertree.js:747</a>
+    </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+
+    boolean
+
+
+    <p>Whether the layer tree controller supports having its
+    layer opacity being changed or not.</p>
+
+</div>
+
+    
 
 
 
